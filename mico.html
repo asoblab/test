@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mico | neurowear</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><span class="logo-text">neurowear</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="necomimi.html">necomimi</a></li>
+        <li><a href="shippo.html">shippo</a></li>
+        <li><a href="mico.html" style="color:var(--color-accent)">mico</a></li>
+        <li><a href="mononome.html">mononome</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <p class="page-hero-eyebrow">Project 03</p>
+      <h1>mico</h1>
+      <p>Music Inspiration from your Subconsciousness.<br>脳波があなたに最適な音楽を選ぶ。</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="content-grid">
+      <div class="content-text">
+        <h2>脳波で選ぶ、あなたのための音楽</h2>
+        <p>mico（ミコ）は「Music Inspiration from your Subconsciousness」の略称。脳波センサーを内蔵したヘッドフォンと、iOS アプリを組み合わせたシステムです。2013年に発表されました。</p>
+        <p>装着者の脳波を計測し、「集中」「眠気」「ストレス」の3つの状態をリアルタイムで判定。その状態に最も適した楽曲を自動で選び、再生します。曲を手動で選ぶ手間から解放される、まったく新しい音楽体験です。</p>
+        <p>アルゴリズムは慶應義塾大学・光吉俊二研究室との共同開発。感情スコアに基づいてタグ付けされた約100曲のライブラリから、リアルタイムでマッチングを行います。</p>
+        <ul class="feature-list">
+          <li>NeuroSky チップ搭載の脳波計測ヘッドフォン</li>
+          <li>集中・眠気・ストレスの3状態をリアルタイム判定</li>
+          <li>慶應義塾大学 光吉研究室との共同アルゴリズム開発</li>
+          <li>iOS アプリ連携：感情スコアに基づく自動選曲</li>
+          <li>ヘッドフォン側面の LED で現在の状態を表示</li>
+        </ul>
+      </div>
+      <div class="content-visual">
+        <div class="product-illustration">
+          <svg viewBox="0 0 180 180" width="160" height="160">
+            <!-- Headphones -->
+            <path d="M40,90 C40,55 65,30 90,30 C115,30 140,55 140,90" fill="none" stroke="currentColor" stroke-width="2.5"/>
+            <!-- Ear cups -->
+            <rect x="22" y="80" width="28" height="44" rx="10" fill="none" stroke="currentColor" stroke-width="2.5"/>
+            <rect x="130" y="80" width="28" height="44" rx="10" fill="none" stroke="currentColor" stroke-width="2.5"/>
+            <!-- LED indicator left -->
+            <circle cx="36" cy="76" r="4" fill="currentColor" opacity="0.8"/>
+            <!-- EEG wave inside -->
+            <path d="M30,102 L40,102 L45,92 L50,112 L55,96 L60,105 L65,102 L70,102"
+              fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+            <!-- Sensor -->
+            <circle cx="90" cy="30" r="5" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+            <circle cx="90" cy="30" r="2" fill="currentColor" opacity="0.6"/>
+            <!-- Music notes -->
+            <text x="80" y="155" font-family="serif" font-size="22" fill="currentColor" opacity="0.5">♪</text>
+            <text x="110" y="148" font-family="serif" font-size="16" fill="currentColor" opacity="0.35">♩</text>
+            <text x="58" y="148" font-family="serif" font-size="16" fill="currentColor" opacity="0.35">♫</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section alt">
+    <div class="content-inner">
+      <div class="section-header">
+        <h2>How It Works</h2>
+        <p>潜在意識から音楽が生まれる</p>
+      </div>
+      <div class="content-grid">
+        <div class="content-text">
+          <h2>脳波の解析</h2>
+          <p>mico はヘッドフォンに内蔵されたセンサーで前頭部の脳波を計測。NeuroSky チップと慶應義塾大学が共同開発した独自アルゴリズムにより、脳波の周波数帯域（α波・β波・θ波）の比率から感情スコアを算出します。</p>
+          <ul class="feature-list">
+            <li>α波（8–13Hz）: リラックス・創造性</li>
+            <li>β波（13–30Hz）: 集中・覚醒</li>
+            <li>θ波（4–8Hz）: 眠気・瞑想状態</li>
+          </ul>
+        </div>
+        <div class="content-text">
+          <h2>音楽のマッチング</h2>
+          <p>算出された感情スコアは Bluetooth 経由で iPhone アプリに送信され、感情タグ付きの楽曲ライブラリの中から最適な曲を自動選択・再生します。選ばれた曲はプレイリストとして蓄積され、あなたの感情パターンを学習していきます。</p>
+          <ul class="feature-list">
+            <li>約100曲の感情タグ付きライブラリ</li>
+            <li>リアルタイムマッチングアルゴリズム</li>
+            <li>学習機能：使えば使うほど精度が向上</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-text">neurowear</span>
+        <p>communication for the near future</p>
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="necomimi.html">necomimi</a></li>
+          <li><a href="shippo.html">shippo</a></li>
+          <li><a href="mico.html">mico</a></li>
+          <li><a href="mononome.html">mononome</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="footer-social">
+        <a href="https://twitter.com/neurowear" target="_blank" rel="noopener">Twitter</a>
+        <a href="https://www.youtube.com/@neurowear" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 neurowear. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

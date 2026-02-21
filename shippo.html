@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shippo | neurowear</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><span class="logo-text">neurowear</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="necomimi.html">necomimi</a></li>
+        <li><a href="shippo.html" style="color:var(--color-accent)">shippo</a></li>
+        <li><a href="mico.html">mico</a></li>
+        <li><a href="mononome.html">mononome</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <p class="page-hero-eyebrow">Project 02</p>
+      <h1>shippo</h1>
+      <p>脳波と心拍で揺れる、感情のしっぽ。<br>気分をSNSでシェアする新しいウェアラブル。</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="content-grid">
+      <div class="content-text">
+        <h2>感情が可視化される、新しい身体表現</h2>
+        <p>shippo（しっぽ）は、脳波センサーと心拍センサーを組み合わせたウェアラブルのしっぽ型デバイスです。2012年の東京ゲームショウで初披露されました。</p>
+        <p>深い集中状態を感知すると、しっぽが力強く揺れ、リラックス状態では緩やかに揺れます。α波・β波の活性度と心拍のバリアビリティを組み合わせることで、より精度の高い感情マッピングを実現しています。</p>
+        <p>専用のiPhoneアプリと連携し、現在地情報とともにあなたの「気分」をSNSにリアルタイムで発信することができます。</p>
+        <ul class="feature-list">
+          <li>脳波（EEG）＋心拍センサーの複合計測</li>
+          <li>Bluetooth でしっぽモーターユニットに無線伝送</li>
+          <li>集中・リラックスの度合いに応じた揺れのパターン</li>
+          <li>iPhone アプリ連携：気分データを GPS 付きで SNS シェア</li>
+          <li>Prototype（プロトタイプ）— 東京ゲームショウ 2012 出展</li>
+        </ul>
+      </div>
+      <div class="content-visual">
+        <div class="product-illustration">
+          <svg viewBox="0 0 160 200" width="140" height="180">
+            <!-- Tail shape -->
+            <path d="M80,30 C80,30 120,55 120,100 C120,130 100,155 82,162 C82,162 92,130 80,115 C68,130 78,162 78,162 C60,155 40,130 40,100 C40,55 80,30 80,30 Z"
+              fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+            <!-- Motion lines -->
+            <path d="M80,115 Q95,100 115,90" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.4"
+              stroke-dasharray="4 3"/>
+            <path d="M80,115 Q65,100 45,90" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.4"
+              stroke-dasharray="4 3"/>
+            <!-- Sensor indicator -->
+            <circle cx="80" cy="30" r="8" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+            <circle cx="80" cy="30" r="3" fill="currentColor" opacity="0.7"/>
+            <!-- Heartbeat line -->
+            <path d="M20,185 L40,185 L47,172 L55,198 L62,178 L70,190 L78,185 L140,185"
+              fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section alt">
+    <div class="content-inner">
+      <div class="section-header">
+        <h2>Social Emotion</h2>
+        <p>感情をリアルタイムでシェアする</p>
+      </div>
+      <div class="content-grid">
+        <div class="content-text">
+          <h2>感情の地図をつくる</h2>
+          <p>shippo の iPhone アプリは、装着者の気分をリアルタイムで記録し、GPS データとともにソーシャルネットワークに投稿します。あなたが今どんな気持ちでどこにいるかを、言葉なしに周囲に伝えることができます。</p>
+          <p>複数の shippo 装着者のデータを集約することで、街全体の「感情マップ」を生成することも可能です。これは人々の集合的な感情の状態を可視化する、未来型のコミュニケーションインフラです。</p>
+        </div>
+        <div class="content-text">
+          <h2>Technology Stack</h2>
+          <p>EEG（脳波）センサーとPPG（光学式心拍）センサーを組み合わせ、より正確な感情推定を実現しています。NeuroSky チップを採用した脳波解析に加え、心拍変動（HRV）解析アルゴリズムも組み込まれています。</p>
+          <ul class="feature-list">
+            <li>EEG + PPG マルチモーダル生体信号計測</li>
+            <li>HRV（心拍変動）解析</li>
+            <li>Bluetooth Low Energy 通信</li>
+            <li>iOS アプリ連携・SNS 自動投稿</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-text">neurowear</span>
+        <p>communication for the near future</p>
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="necomimi.html">necomimi</a></li>
+          <li><a href="shippo.html">shippo</a></li>
+          <li><a href="mico.html">mico</a></li>
+          <li><a href="mononome.html">mononome</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="footer-social">
+        <a href="https://twitter.com/neurowear" target="_blank" rel="noopener">Twitter</a>
+        <a href="https://www.youtube.com/@neurowear" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 neurowear. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
