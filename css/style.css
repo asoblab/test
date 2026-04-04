@@ -166,13 +166,23 @@ img {
   font-weight: 700;
   letter-spacing: 0.05em;
   line-height: 1;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   background: linear-gradient(135deg, #ffffff 0%, var(--color-accent) 50%, var(--color-accent-2) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   opacity: 0;
   animation: fadeUp 0.8s 0.4s forwards;
+}
+
+.hero-subtitle {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 24px;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.55s forwards;
 }
 
 .hero-sub {
